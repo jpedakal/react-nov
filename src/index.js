@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Header'
 
 const App = () => {
     return (
@@ -8,4 +9,4 @@ const App = () => {
         </div>
     )
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Header />, document.getElementById('root'));
