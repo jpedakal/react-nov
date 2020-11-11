@@ -5,8 +5,9 @@ import Header from './Header'
 const App = () => {
     return (
         <div>
+            <Header />
             <h1>This is React Page</h1>
         </div>
     )
 }
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
