@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Header = () => {
-    return (
-        <header>
-            <p>React Application</p>
-            <input />
-        </header>
-    )
+class Header extends Component {
+    constructor(){
+        super()
+
+        this.state={
+            title: "React App"
+        }
+    }
+    render() {
+        const data= this.state;
+        return (
+            <div>
+                <p>{data.title}</p>
+            </div >
+        )
+    }
 }
+
+
 
 export default Header
