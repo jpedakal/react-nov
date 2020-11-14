@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import "./Header.css"
+
 
 class Header extends Component {
-    constructor(){
+    constructor() {
         super()
 
-        this.state={
+        this.state = {
             title: "React App"
         }
     }
     render() {
-        const data= this.state;
+        const data = this.state;
         return (
-            <div>
-                <p>{data.title}</p>
-            </div >
+            <header>
+                <p className="logo">{data.title}</p>
+                <center>
+                    <input />
+                </center>
+            </header >
         )
     }
 }
