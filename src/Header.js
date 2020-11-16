@@ -13,12 +13,14 @@ class Header extends Component {
     render() {
         const data = this.state;
         return (
+            <React.Fragment>
             <header>
                 <p className="logo">{data.title}</p>
                 <center>
                     <input />
                 </center>
-            </header >
+                </header>
+            </React.Fragment>
         )
     }
 }
