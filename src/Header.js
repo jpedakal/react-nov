@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import "./Header.css"
 
 
@@ -13,14 +13,14 @@ class Header extends Component {
     render() {
         const data = this.state;
         return (
-            <React.Fragment>
+            <Fragment>
             <header>
                 <p className="logo">{data.title}</p>
                 <center>
                     <input />
                 </center>
                 </header>
-            </React.Fragment>
+            </Fragment>
         )
     }
 }
