@@ -3,7 +3,7 @@ import Header from './Header';
 import JSON from '../db.json'
 
 class Home extends Component {
-    
+
     constructor(){
         super()
 
@@ -13,6 +13,7 @@ class Home extends Component {
     }
 
     render() {
+        console.log(this.state.news);
         return (
             <div>
                 <Header />
