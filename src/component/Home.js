@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import JSON from '../db.json';
+import NewsDisply from './NewsDisplay';
 
 class Home extends Component {
 
-    constructor(){
+    constructor() {
         super()
 
-        this.state={
+        this.state = {
             news: JSON
         }
     }
 
     render() {
-        console.log(this.state.news);
         return (
             <div>
                 <Header />
                 <hr />
-                <h1>This is React Page</h1>
+                <NewsDisply datalist={this.state.news}/>
             </div>
         )
     }
