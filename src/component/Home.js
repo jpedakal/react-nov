@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import JSON from '../db.json';
-import NewsDisply from './NewsDisplay';
+import NewsDisplay from './NewsDisplay';
 
 class Home extends Component {
 
@@ -18,7 +18,7 @@ class Home extends Component {
             <div>
                 <Header />
                 <hr />
-                <NewsDisply datalist={this.state.news}/>
+                <NewsDisplay datalist={this.state.news}/>
             </div>
         )
     }
