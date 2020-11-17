@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import "./Header.css"
 
-
 class Header extends Component {
 
     constructor() {
@@ -11,7 +10,7 @@ class Header extends Component {
             title: "React App"
         }
     }
-    
+
     render() {
         const data = this.state;
         return (
