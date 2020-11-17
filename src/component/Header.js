@@ -3,7 +3,7 @@ import "./Header.css"
 
 
 class Header extends Component {
-    
+
     constructor() {
         super()
 
@@ -11,6 +11,7 @@ class Header extends Component {
             title: "React App"
         }
     }
+    
     render() {
         const data = this.state;
         return (
