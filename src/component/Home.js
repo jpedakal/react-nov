@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
-import JSON from '../db.json'
+import JSON from '../db.json';
 
 class Home extends Component {
 
