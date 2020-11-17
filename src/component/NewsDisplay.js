@@ -1,11 +1,20 @@
 import React from 'react';
 
 const NewsDisplay = (props) => {
-    console.log(props);
+    const renderList = props.datalist.map((data) => {
+        return (
+            <div>
+                <h2>{data.title}</h2>
+                <p>{data.feed}</p>
+                <img src={data.imageUrl} alt="figure" />
+            </div>
+        )
+    })
+
     return (
-        <div>
-            <h2>React Application</h2>
-        </div>
+        <React.Fragment>
+            {renderList}
+        </React.Fragment>
     )
 }
 
