@@ -11,6 +11,10 @@ class Header extends Component {
         }
     }
 
+    inputChange(event){
+        console.log(event.target.value)
+    }
+
     render() {
         const data = this.state;
         return (
