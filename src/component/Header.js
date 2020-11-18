@@ -18,7 +18,7 @@ class Header extends Component {
             <header>
                 <p className="logo">{data.title}</p>
                 <center>
-                    <input />
+                    <input onChange={this.inputChange} />
                 </center>
                 </header>
             </Fragment>
