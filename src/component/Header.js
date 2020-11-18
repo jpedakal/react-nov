@@ -11,19 +11,21 @@ class Header extends Component {
         }
     }
 
-    inputChange(event){
+    inputChange(event) {
         console.log(event.target.value)
+        this.setState({keyword: event.target.value})
     }
 
     render() {
         const data = this.state;
         return (
             <Fragment>
-            <header>
-                <p className="logo">{data.title}</p>
-                <center>
-                    <input onChange={this.inputChange} />
-                </center>
+                <header>
+                    <p className="logo">{data.title}</p>
+                    <center>
+                        <input onChange={this.inputChange.bind(this)} />
+                        <p>{this.state.keyword}</p>
+                    </center>
                 </header>
             </Fragment>
         )
