@@ -1,6 +1,7 @@
 import React from 'react';
 
 const NewsDisplay = (props) => {
+    
     const renderList = props.datalist.map((data) => {
         return (
             <div>
