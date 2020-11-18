@@ -8,7 +8,7 @@ class Home extends Component {
     constructor() {
         super()
 
-        this.abc = {
+        this.state = {
             news: JSON
         }
     }
@@ -18,7 +18,7 @@ class Home extends Component {
             <div>
                 <Header />
                 <hr />
-                <NewsDisplay datalist={this.abc.news}/>
+                <NewsDisplay datalist={this.state.news}/>
             </div>
         )
     }
