@@ -15,7 +15,6 @@ class Header extends Component {
         console.log(event.target.value)
         this.setState({keyword: event.target.value})
     }
-
     render() {
         const data = this.state;
         return (
