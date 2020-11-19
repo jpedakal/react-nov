@@ -8,12 +8,12 @@ class Header extends Component {
 
         this.state = {
             title: "React App",
-            keyword: "Search"
         }
     }
 
     inputChange(event) {
-       this.setState({keyword: event.target.value})
+       
+       this.setState({keyword: event.target.value ? event.target.value : "Search"})
     }
 
     render() {
