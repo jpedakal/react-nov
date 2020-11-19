@@ -12,9 +12,10 @@ class Header extends Component {
     }
 
     inputChange(event) {
-        this.setState({keyword: event.target.value})
+        console.log(event.value)
+       // this.setState({keyword: event.target.value})
     }
-    
+
     render() {
         const data = this.state;
         return (
