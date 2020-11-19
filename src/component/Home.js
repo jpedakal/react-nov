@@ -9,8 +9,16 @@ class Home extends Component {
         super()
 
         this.state = {
-            news: JSON
+            news: JSON,
+            filtered: JSON
         }
+    }
+
+    filteredNews(){
+        const output= this.state.news.filter(data=>{
+            return data.title.indexOf(keyword)>-1
+        })
+        this.setState({filtered:output})
     }
 
     render() {
