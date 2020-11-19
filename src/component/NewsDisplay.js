@@ -5,7 +5,7 @@ const NewsDisplay = (props) => {
 
     const renderList = props.datalist.map((data) => {
         return (
-            <LazyLoad height={200} throttle={500}>
+            <LazyLoad height={200} throttle={500} key={data.id}>
                 <div>
                     <h2>{data.title}</h2>
                     <p>{data.feed}</p>
