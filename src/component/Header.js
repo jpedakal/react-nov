@@ -12,8 +12,7 @@ class Header extends Component {
     }
 
     inputChange(event) {
-        console.log(event.value)
-       // this.setState({keyword: event.target.value})
+       this.setState({keyword: event.target.value})
     }
 
     render() {
