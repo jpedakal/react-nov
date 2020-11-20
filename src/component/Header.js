@@ -13,6 +13,7 @@ class Header extends Component {
 
     inputChange(event) {
        this.setState({keyword: event.target.value ? event.target.value : "Search"})
+       this.props.userText(event.target.value)
     }
 
     render() {

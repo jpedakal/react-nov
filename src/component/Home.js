@@ -14,7 +14,7 @@ class Home extends Component {
         }
     }
 
-    filteredNews(){
+    filteredNews(keyword){
         const output= this.state.news.filter(data=>{
             return data.title.indexOf(keyword)>-1
         })
@@ -24,7 +24,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Header />
+                <Header userText={(userInput)=> {this.filteredNews(userInput)}}/>
                 <hr />
                 <NewsDisplay datalist={this.state.news}/>
             </div>
