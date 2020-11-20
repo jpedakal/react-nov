@@ -14,19 +14,19 @@ class Home extends Component {
         }
     }
 
-    filteredNews(keyword){
-        const output= this.state.news.filter(data=>{
-            return data.title.indexOf(keyword)>-1
+    filteredNews(keyword) {
+        const output = this.state.news.filter(data => {
+            return data.title.indexOf(keyword) > -1
         })
-        this.setState({filtered:output})
+        this.setState({ filtered: output })
     }
 
     render() {
         return (
             <div>
-                <Header userText={(userInput)=> {this.filteredNews(userInput)}}/>
+                <Header userText={(userInput) => { this.filteredNews(userInput) }} />
                 <hr />
-                <NewsDisplay datalist={this.state.filtered}/>
+                <NewsDisplay datalist={this.state.filtered} />
             </div>
         )
     }
