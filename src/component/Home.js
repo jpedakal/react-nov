@@ -26,7 +26,7 @@ class Home extends Component {
             <div>
                 <Header userText={(userInput)=> {this.filteredNews(userInput)}}/>
                 <hr />
-                <NewsDisplay datalist={this.state.news}/>
+                <NewsDisplay datalist={this.state.filtered}/>
             </div>
         )
     }
