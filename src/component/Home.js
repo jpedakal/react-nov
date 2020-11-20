@@ -16,7 +16,7 @@ class Home extends Component {
 
     filteredNews(keyword) {
         const output = this.state.news.filter(data => {
-            return data.title.indexOf(keyword) > -1
+            return data.title.toLowerCase().indexOf(keyword.toLowerCase()) > -1
         })
         this.setState({ filtered: output })
     }
